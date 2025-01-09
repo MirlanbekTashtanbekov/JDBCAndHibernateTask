@@ -1,8 +1,11 @@
 package peaksoft.model;
 
+import lombok.ToString;
+
 import javax.persistence.*;
 
 @Table
+@ToString
 public class User {
     @Id
     private Long id;
@@ -56,5 +59,7 @@ public class User {
     public void setAge(Byte age) {
         this.age = age;
     }
+
+
 
 }
